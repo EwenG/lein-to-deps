@@ -2,8 +2,6 @@
 
 A library to help the creation of a deps.edn file (tools.deps) from a project.clj file (Leiningen).
 
-# Installation
-
 # Usage
 
 From a Leiningen project, create the following namespace:
