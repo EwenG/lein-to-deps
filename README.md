@@ -19,7 +19,7 @@ From a Leiningen project, create the following namespace:
         deps-map (try (read-string (slurp "deps.edn"))
                       (catch FileNotFoundException e {}))
         ;; Update the deps.edn map with the dependencies and repositories from the project.clj map
-        ;; ALso set the :paths entry of the deps.edn map to a hard coded value
+        ;; Also set the :paths entry of the deps.edn map to a hard coded value
         deps-map (merge
                   deps-map
                   {:paths ["src" "target/classes"]}
