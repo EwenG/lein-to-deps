@@ -23,8 +23,8 @@ From a Leiningen project, create the following namespace:
         deps-map (merge
                   deps-map
                   {:paths ["src" "target/classes"]}
-                  ;; lein-to-deps has two helper functions to convert from the Leiningen
-                  ;; dependencies and repositores format into the tools.deps format
+                  ;; lein-to-deps provides two helper functions to convert from the Leiningen
+                  ;; dependencies and repositores formats into the tools.deps formats
                   (to-deps/format-dependencies dependencies)
                   (to-deps/format-repositories repositories))]
     ;; Pretty print the result into the deps.edn file
