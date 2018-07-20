@@ -33,7 +33,7 @@ From a Leiningen project, create the following namespace:
       (spit "deps.edn" (with-out-str (pprint/pprint deps-map))))))
 ```
 
-Create a script at the root of the project called `lein-to-deps.sh`:
+Create a script at the root of the project called `lein-to-deps.sh` and execute it:
 
 ```
 #!/bin/sh
